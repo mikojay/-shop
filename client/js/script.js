@@ -33,6 +33,7 @@ window.onload = () => {
 				<div class="product-image" style="background-image: url('../img/${p.image}')">
 					<i class="far fa-star"></i>
 				</div>
+				<div class="color" style="background: ${p.color}"></div>
 				<div class="product-extras">
 					<div class="description">
 						<h4>${p.name}</h4>
