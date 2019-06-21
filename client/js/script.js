@@ -63,26 +63,30 @@ window.onload = () => {
 
 				// clear the products
 				products_ui.innerHTML = ''
-				// display each product in the DOM
-				products.forEach((p) => {
-					products_ui.insertAdjacentHTML('beforeEnd', `
-					<div class="product">
-						<div class="product-image" style="background-image: url('../img/${p.image}')">
-							<i class="far fa-star"></i>
-						</div>
-						<div class="product-extras">
-							<div class="description">
-								<h4>${p.name}</h4>
-								<small>${p.description}</small>
+				if (res.data.length) {
+					// display each product in the DOM
+					products.forEach((p) => {
+						products_ui.insertAdjacentHTML('beforeEnd', `
+						<div class="product">
+							<div class="product-image" style="background-image: url('../img/${p.image}')">
+								<i class="far fa-star"></i>
 							</div>
-							<div class="price">
-								<span>$${p.price}</span>
-								<a href="#" class="button">shop now</a>
+							<div class="product-extras">
+								<div class="description">
+									<h4>${p.name}</h4>
+									<small>${p.description}</small>
+								</div>
+								<div class="price">
+									<span>$${p.price}</span>
+									<a href="#" class="button">shop now</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					`)
-				})
+						`)
+					})
+				} else {
+					products_ui.innerHTML = 'No products found.'
+				}
 			}).catch((err) => {
 				console.log('err', err)
 			})

@@ -11,6 +11,7 @@ body {
 	padding: 50px;
 	border-radius: 15px;
 	box-shadow: 0 5px 20px rgba(0,0,0,.15);
+	min-height: 400px;
 }
 
 h1 {
