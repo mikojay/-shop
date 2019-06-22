@@ -7,7 +7,7 @@ const app = express()
 // API
 
 app.get('/api/products', require('./controllers/products_get'))
-app.get('/api/products/:id', require('./controllers/products_get'))
+app.get('/api/products/:category', require('./controllers/products_get'))
 app.get('/api/categories', require('./controllers/categories_get'))
 app.get('/api/colors', require('./controllers/colors_get'))
 

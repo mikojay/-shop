@@ -3,8 +3,8 @@ const db = require('../db')
 
 module.exports = (req, res) => {
 	let query = `SELECT * FROM products `
-	if (req.params.id) {
-		query += `WHERE category = ${req.params.id}`
+	if (req.params.category) {
+		query += `WHERE category = ${req.params.category}`
 	}
 	db.query(query, (err, result) => {
 		if (err) {
