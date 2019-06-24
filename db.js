@@ -3,7 +3,7 @@ const {Client} = require('pg')
 
 // create connection
 const db = new Client({
-	connectionString: 'postgres://Jaschi:@localhost:5432/shop'
+	connectionString: process.env.DATABASE_URL
 })
 
 // connect to database
