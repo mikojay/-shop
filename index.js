@@ -16,6 +16,8 @@ app.get('/', (req, res) => {
 	console.log('__dirname', __dirname)
 })
 
+require('dotenv').config()
+
 app.get('/api/color', require ('./controllers/color.js'))
 
 app.get('/api/products', require ('./controllers/products_get.js'))
@@ -25,6 +27,6 @@ app.get('/api/products/:id', require ('./controllers/productsx_get.js'))
 app.get('/api/categories', require ('./controllers/categories_get.js'))
 // Run Server
 
-app.listen(3000, () => {
-	console.log('Server listening on port 3000');
+app.listen(process.env.PORT, () => {
+	console.log(`Server listening on port ${process.env.PORT}`);
 })
