@@ -3,7 +3,7 @@
 window.onload = () => {
 	// let sidebar = document.getElementById('sidebar')
 	//products
-	axios.get('http://localhost:3000/api/products').then((res) => {
+	axios.get('/api/products').then((res) => {
 		//set products to api
 		let products = res.data
 		//target products
@@ -35,7 +35,7 @@ window.onload = () => {
 
 	//productsx
 
-	axios.get('http://localhost:3000/api/productsx').then((res) => {
+	axios.get(':3000/api/productsx').then((res) => {
 		//set products to api
 		let productsx = res.data
 		//target products
@@ -51,7 +51,7 @@ window.onload = () => {
 	})
 
 	//categories
-	axios.get('http://localhost:3000/api/categories').then((res) => {
+	axios.get(':3000/api/categories').then((res) => {
 	//set categories to api
 		let categories = res.data
 		//target categories
