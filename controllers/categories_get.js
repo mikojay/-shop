@@ -1,11 +1,12 @@
-const db = require('../db')
+// Database
+const db = require('../db');
 
-module.exports=(req, res) => {
+module.exports = (req, res) => {
 	db.query(`SELECT * FROM categories`, (err, result) => {
 		if (err) {
 			console.log('err', err)
 		} else {
 			res.send(result.rows)
 		}
-	})
-}
+	});
+};

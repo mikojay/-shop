@@ -17,6 +17,7 @@ window.onload = () => {
 			<div class="product-image">
 				<i class="far fa-star"></i>
 			</div>
+			<div class="category"</div>
 			<div class="product-extras">
 				<div class="description">
 					<h4>${p.name}</h4>

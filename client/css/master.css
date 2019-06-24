@@ -11,6 +11,7 @@ body {
 	padding: 50px;
 	border-radius: 15px;
 	box-shadow: 0 5px 20px rgba(0,0,0,.15);
+	min-height: 400px;
 }
 
 h1 {
@@ -40,7 +41,6 @@ h1 {
 
 .product-image {
 	background-color: #f6f6f6;
-	background-image: url('../img/classic_grey.jpg');
 	background-size: auto 90% ;
 	background-repeat: no-repeat;
 	background-position: center 15px;
@@ -151,4 +151,12 @@ h1 {
 #sidebar > nav > ul > li > ul > li.active > a {
 	text-decoration: underline;
 	color: black;
+}
+.color {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
