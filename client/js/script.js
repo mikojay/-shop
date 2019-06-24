@@ -35,7 +35,7 @@ window.onload = () => {
 
 	//productsx
 
-	axios.get(':3000/api/productsx').then((res) => {
+	axios.get('/api/productsx').then((res) => {
 		//set products to api
 		let productsx = res.data
 		//target products
@@ -51,7 +51,7 @@ window.onload = () => {
 	})
 
 	//categories
-	axios.get(':3000/api/categories').then((res) => {
+	axios.get('/api/categories').then((res) => {
 	//set categories to api
 		let categories = res.data
 		//target categories
