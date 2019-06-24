@@ -3,7 +3,7 @@ const {Client} = require('pg')
 
 // create connection
 const db = new Client({
-	connectionString: 'postgres://tortuga:@localhost:5432/myshop'
+	connectionString: 'postgres://Jaschi:@localhost:5432/shop'
 })
 
 // connect to database
